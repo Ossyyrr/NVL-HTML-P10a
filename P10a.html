@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+   <form method="post" action="miservidor.php">
+      <div>
+        <label for="cp">Código postal:</label>
+        <input id="cp" type="text">
+      </div>
+      <div>
+        <label for="satis">Satisfacción con el producto (0: nada; 5: mucho):</label>
+        <input id="satis" type="number" max="5" min="1"> 
+      </div>
+      <div>
+        <label for="mail">email</label>
+        <input id="mail" type="email">
+      </div>
+      <div>
+      <label for="posi">Puntos positivos del producto:</label>
+      <textarea id="posi"></textarea>
+      </div> 
+      <div>
+        <label for="nega">Puntos negativos del producto:</label>
+        <textarea id="nega"></textarea>
+      </div>
+      <div>
+        <label for="inv">Acabado:</label>
+        <select id="inv">
+          <option value="e">Excelente</option>
+          <option value="b">Bueno</option>
+          <option value="r">Regular</option>
+          <option value="p">Pésimo</option>
+        </select>
+      </div>
+      <div>
+        <label for="rad">Usabilidad:</label>
+        <input name="e" type="radio" value="ex" id="ex"><label for="ex">Excelente</label>
+        <input name="e" type="radio" value="bu" id="bu"><label for="bu">Bueno</label>
+        <input name="e" type="radio" value="re" id="re"><label for="re">Regular</label>
+        <input name="e" type="radio" value="pe" id="pe"><label for="pe">Pésimo</label>
+    </div>
+   
+    <input type="image" src="send.png" value="Enviar" height="150px"> 
+  </form>
+
+</body>
+
+</html>
